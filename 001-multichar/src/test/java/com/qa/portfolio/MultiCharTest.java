@@ -18,7 +18,8 @@ public class MultiCharTest {
 	
 	@Test
 	public void theTest() {
-		assertEquals("TTThhheee", answers.multiChar("The"));
+		String yes = answers.multiChar("The");
+		assertEquals("TTThhheee", yes );
 	}
 	
 	@Test

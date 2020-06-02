@@ -10,9 +10,39 @@ public class MultiChar {
 	 * @param input - any string
 	 * @return triplicates of each letter from the input
 	 */
-	public String multiChar(String input) {
+	
+	public static void main(String[] args) {
+		System.out.println(multiChar("Help"));
+		
+		
+	}
+	public static String multiChar(String input) {
+		
+		String master = new String();
 		// TODO
-		return "";
+		for (int i = 0; i < input.length(); i++)
+		{
+			for (int j = 0; j <3; j++)
+			{
+			master = master + input.charAt(i); 
+			System.out.println(master);
+			
+			//for (int j = 0; j <3; j++)
+			//{
+			//	System.out.println(input.charAt(j));
+			//}
+			
+			
+		}
+
+		/*for (int i = 0; i < 3; i++)
+		{
+			System.out.println(input);
+			
+		}*/
+	
+		
+		return master;
 	}
 
 }

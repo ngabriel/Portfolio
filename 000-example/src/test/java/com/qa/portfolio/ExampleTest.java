@@ -16,7 +16,8 @@ public class ExampleTest {
 	
 	@Test
 	public void greetingJohnTest() {
-		assertEquals("Hi John", answers.greetingExample("John"));
+		String answer = answers.greetingExample("John");
+		assertEquals("Hi John", answer);
 	}
 	
 	@Test
@@ -28,5 +29,7 @@ public class ExampleTest {
 	public void greetingAngelicaTest() {
 		assertEquals("Hi Angelica", answers.greetingExample("Angelica"));		
 	}
+	
+	
 	
 }

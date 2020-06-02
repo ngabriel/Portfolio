@@ -15,6 +15,32 @@ public class FizzBuzz {
 	 * @return "fizz", "buzz", "fizzbuzz" or numeric value as a string
 	 */
 	public String fizzBuzz(int number) {
-    	return "";
+		String ans = new String();
+		if (number %5 ==0 && number %3 == 0)
+		{
+			ans = "fizzbuzz";
+		}
+		else if (number%3 == 0)
+		{
+			ans = "fizz";
+		}
+		
+		else if (number%5 ==0)
+		{
+			ans = "buzz";
+		}
+		
+		else
+		{
+			//myString = Integer.toString(myInteger);
+			ans = Integer.toString(number);
+		}
+		
+		
+		
+		
+		
+		
+    	return ans;
 	}
 }
